@@ -1,0 +1,168 @@
+*{
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box; 
+}
+
+body{
+    color: #171a20; 
+    font-family: 'M PLUS 1', sans-serif;
+}
+
+@media (max-width: 930px){
+    .desktop{
+        display: none; 
+    }
+    .buttons a{
+        display: block; 
+    }
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    display: grid; 
+    grid-template-columns: auto 1fr auto; 
+    padding: 20px 20px; 
+    position: fixed; 
+    top: 0; 
+    z-index: 2; 
+    width: 100%; 
+}
+
+a.logo{
+    height: 12px; 
+    width: 100px; 
+    color: inherit; 
+}
+
+header a{
+    color: inherit; 
+}
+
+header nav a{
+    text-decoration: none; 
+    padding: 5px 10px; 
+}
+
+header nav.center{
+    text-align: center; 
+}
+
+header nav.right{
+    text-align: right; 
+}
+
+section{
+    height: 100vh; 
+    background-size: cover; 
+    background-position: center center; 
+}
+
+section .content{
+    width: 100%; 
+    height: 100vh; 
+    padding-top: 15vh; 
+    padding-bottom: 15vh; 
+    text-align: center; 
+    display: grid; 
+    grid-template-rows: min-content auto min-content; 
+}
+
+.content h1{
+    font-size: 2.5rem; 
+    font-weight: 500; 
+}
+
+.content a{
+    text-decoration: none; 
+    color: inherit; 
+    border-bottom: #171a20 1px solid; 
+}
+
+
+.buttons a{
+    font-size: .8rem; 
+    text-decoration: none;
+    border-radius: 25px; 
+    text-transform: uppercase; 
+    padding: 10px 60px; 
+    font-weight: 500; 
+}
+
+section .buttons{
+    display: grid; 
+    row-gap: 20px; 
+    margin: 0px 40px; 
+}
+
+.buttons a.custom-order{
+    background: rgba(23, 26, 32, 0.8);
+    color: white;
+    border-style: hidden; 
+}
+
+.buttons a.existing-inventory{
+    background: rgba(244, 244, 244, 0.65);
+    color: #171a20; 
+    border-style: hidden; 
+}
+
+@media(min-width: 768px){
+    section .buttons{
+        max-width: 640px; 
+        margin: 0 auto; 
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px; 
+    }
+}
+
+aside{
+    position: fixed; 
+    right: -320px; 
+    width: 300px; 
+    background-color: #fff; 
+    padding: 80px 40px; 
+    z-index: 4; 
+    height: 100vh; 
+    transition: all .4s ease-in-out; 
+}
+
+aside a{
+    display: block; 
+    color: inherit; 
+    text-decoration: none; 
+    padding: 10px 0; 
+    padding-left: 6px; 
+    font-size: 14px; 
+    font-weight: 500; 
+    border-radius: 6px; 
+    transition: all .3s ease-in-out; 
+}
+
+aside a:hover{
+    background-color: rgba(158,158,158, .2); 
+}
+
+aside button#close{
+    font-size: 40px; 
+    border: 0; 
+    background-color: transparent; 
+    position: absolute; 
+    top: 10px; 
+    right: 10px; 
+    padding: 10px; 
+    font-family: sans-serif; 
+    font-weight: 100; 
+}
+
+#backdrop{
+    display: none; 
+    position: fixed; 
+    inset: 0; 
+    background-color: rgba(0,0,0,.3); 
+    backdrop-filter: blur(3px);
+    transition: all .6s ease-in-out; 
+}

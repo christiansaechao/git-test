@@ -1,0 +1,67 @@
+*{
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box; 
+}
+
+
+#burger-container{
+    background-image: url("images/grilled-cheeseburger.jpg"); 
+    background-attachment: fixed;
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    min-height: 500px; 
+}
+
+#sandwiches-container{
+    background-image: url("images/appetizer.jpg"); 
+    background-attachment: fixed;
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    min-height: 500px; 
+}
+
+#hotdogs-container{
+    background-image: url("images/salad.jpg"); 
+    background-attachment: fixed;
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    min-height: 500px; 
+}
+
+#menu-container{
+    margin: 0 auto; 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    width: 1160px; 
+    padding: 20px; 
+    column-gap: 20px;
+    background-color: rgba(256,256,256, .8);
+}
+
+li{
+    list-style: none; 
+    border-bottom: 1px solid black; 
+    padding: 20px; 
+}
+
+li p{
+    padding-top: 15px; 
+}
+
+.bold{
+    font-weight: bold; 
+    padding-top: 10px; 
+}
+
+h2{
+    margin: 0 auto; 
+    width: 1160px; 
+    padding: 20px; 
+    font-size: 3rem; 
+    text-align: center; 
+    background-color: rgba(256,256,256, .8); 
+}

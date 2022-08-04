@@ -1,0 +1,34 @@
+*{
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box; 
+}
+
+.beer-menu{
+    width: 1200px; 
+    margin: 0 auto; 
+    background-color: lightblue; 
+}
+
+.beer-header{
+    font-size: 5rem; 
+}
+
+.beer-container{
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 40px; 
+    padding: 40px; 
+}
+
+.on-tap{
+    border: 1px solid black; 
+    padding: 30px; 
+    grid-row: 1 / 6; 
+    background-color: lightcoral; 
+}
+
+.section-header{
+    border-bottom: 1px solid black; 
+    padding: 10px 5px; 
+}
